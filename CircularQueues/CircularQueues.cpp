@@ -119,7 +119,12 @@ public:
 				case '1': {
 
 					q.insert();
-						break;
+					break;
+				}
+				case '2': {
+					q.remove();
+					break;
+				}
 			}
 		}
 	}
