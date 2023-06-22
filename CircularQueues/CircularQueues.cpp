@@ -61,4 +61,18 @@ public:
 		}
 	}
 
+	void display() {
+		int FRONT_position = FRONT;
+		int REAR_position = REAR;
+
+		// Cek apakah antrian kosong
+		if (FRONT == 0 - 1) {
+			cout << "Queue is empty\n";
+			return;
+		}
+
+		cout << "\nElements in the queue are: \n";
+
+		
+
 };
