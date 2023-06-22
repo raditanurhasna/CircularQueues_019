@@ -39,6 +39,26 @@ public:
 
 	}
 
-	
+	void remove() {
+		//cek apakah antrian kosong
+		if (FRONT == -1) {
+			cout << "Queue inderflow\n";
+			return;
+		}
+		cout << "\nThe element deleted from the queue is: " << queue_array[FRONT] << "\n";
+
+		//cek antrian hanya meiliki satu elemn
+		if (FRONT == REAR) {
+			FRONT = -1;
+			REAR = -1;
+		}
+		else {
+			//Jika element yang dihapus berada di posisi terakhir array, kembali ke away array
+			if (FRONT == max - 1)
+				FRONT = 0;
+			else
+				FRONT = FRONT + 1;
+		}
 	}
+
 };
