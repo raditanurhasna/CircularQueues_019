@@ -137,5 +137,8 @@ public:
 					break;
 				}
 				}
+				catch (exceptional& e) {
+					cout << "check for the values enterned." << endl;
+				}
 			}
-	}
+		}
